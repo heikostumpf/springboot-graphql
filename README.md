@@ -48,3 +48,4 @@ Use the graphical interface and query the endpoint for all available pets includ
 ## Source
 * [graphql.org](https://graphql.org)
 * [dev.to](https://dev.to/sambenskin/howto-integrate-a-mysql-database-into-your-java-spring-boot-graphql-service-26c) - HowTo: Integrate a MySQL Database into your Java Spring Boot GraphQL Service by Sam Benskin
+* [pluralsight.com](https://www.pluralsight.com/guides/building-a-graphql-server-with-spring-boot) Building a GraphQL Server with Spring Boot by Esteban Herrera
