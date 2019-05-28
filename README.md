@@ -60,6 +60,9 @@ Query for all pets with the owner:
 }
 ```
 
+## DB Schema
+![DB Schema](https://github.com/heikostumpf/graphql-tester/blob/master/src/main/resources/graphql_pets_owner.jpg)
+
 ## Source
 * [graphql.org](https://graphql.org)
 * [dev.to](https://dev.to/sambenskin/howto-integrate-a-mysql-database-into-your-java-spring-boot-graphql-service-26c) - HowTo: Integrate a MySQL Database into your Java Spring Boot GraphQL Service by Sam Benskin
