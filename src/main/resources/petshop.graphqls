@@ -1,12 +1,21 @@
 type Query {
     pets: [Pet]
     petsById(id: Int!): [Pet]
+    owners: [Owner]
 }
 
 type Pet {
     id: Int
     type: Animal
     name: String
+    age: Int
+    owner: Owner
+}
+
+type Owner {
+    id: Int
+    firstname: String
+    lastname: String
     age: Int
 }
 

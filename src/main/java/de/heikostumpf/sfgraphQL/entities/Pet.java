@@ -12,6 +12,7 @@ public class Pet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
 
     private String name;
@@ -20,4 +21,8 @@ public class Pet {
     private Animal type;
 
     private int age;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
 }

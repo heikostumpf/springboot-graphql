@@ -24,6 +24,8 @@ http://localhost:8080/graphiql
 ```
 
 Use the graphical interface and query the endpoint for all available pets including the name, age and type attribute.
+
+Query for all available pets: 
 ```
 {
     pets {
@@ -34,13 +36,26 @@ Use the graphical interface and query the endpoint for all available pets includ
 }
 ```
 
+Query for pets with a specific ID:
 ```
 {
     petsById(id: 1) {
-        id
         name
         age
         type
+    }
+}
+```
+
+Query for all pets with the owner:
+```
+{
+    pets {
+        name
+        owner {
+            firstname
+            lastname
+      }
     }
 }
 ```
