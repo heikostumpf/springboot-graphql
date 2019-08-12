@@ -13,9 +13,7 @@ CREATE TABLE `pets` (
     `age` TINYINT (3) DEFAULT NULL,
     `type` ENUM ('DOG', 'CAT', 'BADGER', 'MAMMOTH'),
     `owner_id` INT (11) DEFAULT NULL,
-        FOREIGN KEY fk_owner (id) REFERENCES owners (id) ON
-        UPDATE
-            CASCADE ON DELETE RESTRICT);
+        FOREIGN KEY fk_owner (owner_id) REFERENCES owners (id) );
 
 INSERT INTO `owners` (`firstname`, `lastname`, `age`)
     VALUES ('Steve', 'Stevensen', 5), ('Jeff', 'Jeffersen', 88), ('Oscar', 'Oscarsen', 2), ('Heiko', 'Stumpf', 2);

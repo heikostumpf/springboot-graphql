@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Pet {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
 
@@ -22,7 +22,7 @@ public class Pet {
 
     private int age;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "owner_id")
     private Owner owner;
 }

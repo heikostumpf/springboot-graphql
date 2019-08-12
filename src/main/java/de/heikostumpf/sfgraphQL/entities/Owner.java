@@ -3,7 +3,6 @@ package de.heikostumpf.sfgraphQL.entities;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @Entity
@@ -19,4 +18,11 @@ public class Owner {
     private String lastname;
 
     private int age;
+
+    public Owner() {
+    }
+
+    public Owner(long id) {
+        this.id = id;
+    }
 }

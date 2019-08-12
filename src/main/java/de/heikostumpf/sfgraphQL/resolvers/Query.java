@@ -24,8 +24,7 @@ public class Query implements GraphQLQueryResolver {
     }
 
     public Iterable<Pet> getPetsById(long id) {
-        System.out.println("Incoming ID: " + id);
-        List<Long> ids = new ArrayList<Long>();
+        List<Long> ids = new ArrayList<>();
         ids.add(id);
         return petRepository.findAllById(ids);
     }
