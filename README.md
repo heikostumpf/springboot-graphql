@@ -1,4 +1,4 @@
-# GraphQL Tester
+# Springboot GraphQL
 This application provides an example how to implement a GraphQL endpoint using Java, SpringBoot and MySQL.
 
 ### Installing
